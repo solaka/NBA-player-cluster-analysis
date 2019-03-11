@@ -82,3 +82,10 @@ Many guards fall into one of four categories, defined by whether they are primar
 
 Finally, there are a few “special” positions -- **3: Defensive Stopper**, **4: Offensive Hub**, and **10: 3-Point Specialist** – that don’t fall neatly into any of the previous categories.  Defensive Stoppers aren’t necessarily scoring-impaired, but they do steal the ball at a very high rate.  For a group that doesn’t rebound exceedingly well, they also gather a fair number of blocks.  Offensive Hubs come in different shapes and sizes, but the characteristic they share is that they are involved in a very high percentage of team plays: they have very high assist rates and can (generally) score both inside and outside.  3-Point Specialists have a very high percentage of FGAs coming from 3-point range.  Even when they have height, they tend to remain on the exterior, as evidenced by their low free throw and rebound rates.
 
+### Visualization
+In the graphic below, player clusters are shown plotted by the first two principal components.  Roughly speaking the first component relates to “size / physicality” and is characterized by high free throw, rebound, and block rates, as well as high field goal percentages.  The second component could be said to relate to “quickness / ballhandling”, where low values (arbitrarily, a result of the clustering algorithm) are associated with high assist, steal, and turnover rates.  Players with over 7000 minutes played over the previous 3+ seasons are labelled for reference.  
+
+![alt text](https://github.com/solaka/NBA-player-cluster-analysis/blob/master/graph%20-%20first%202%20PCs.png)
+
+While this is a perfectly decent visualization, there’s a much better one – 3D and interactive! -- at **https://solak.shinyapps.io/nba_player_clustering/** that I strongly encourage you to check out.
+
