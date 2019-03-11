@@ -65,7 +65,7 @@ Index | Category | Characteristics | Archetypes
 5 | Size and Distance | Block and reb rates lower than other big men, but also more effective from 3-pt range | Brook Lopez, Marc Gasol
 9 | Inside-Outside | Not ballhandlers (low ast & TO rates), but provide combination of fairly high reb & 3pt rates | Andre Iguodala, Carmelo Anthony
 4 | Offensive Hub | Offense runs through them: very high ast and TO rates, plus can score outside or at the rim | LeBron James, Russell Westbrook
-3 | Defensive Stopper | Good offensive balance; differentiated by very high steal rate | Jimmy Butler, Kawhi Leonard
+3 | Defensive Stopper | Good offensive balance; differentiated by elevated defensive stats (steal rate, block rate) | Jimmy Butler, Kawhi Leonard
 8 | Attacking Shooter | High ast rate / low reb rate like a guard, but high FT rate indicates tendency to drive | DeMar DeRozan, Devin Booker
 11 | Attacking Distributor | High assist rate, but higher FT rate and lower 3pt rate than Exterior Distributor | Damian Lillard, Kyrie Irving
 12 | Exterior Shooter | Broader role than 3-point Specialist; still high 3pt rate but more assists / TOs | CJ McCollum, Patrick Beverley
