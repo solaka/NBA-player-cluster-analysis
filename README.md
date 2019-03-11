@@ -1,5 +1,5 @@
 # NBA-player-cluster-analysis
-An effort to redefine modern NBA positions using k-means clustering
+### An effort to redefine modern NBA positions using k-means clustering
 <img src='https://cdn.nba.net/nba-drupal-prod/styles/landscape_2090w/s3/2018-08/leaguev3.jpeg?itok=ZxI_rM2D'>
 
 It’s no secret that basketball has changed over the last 25 years or so.  Back in the day, teams consisted of five relatively well-defined positions: point guard, shooting guard, small forward, power forward, and center.  Point guards brought the ball up the court and ran the offense, but didn’t necessarily score a ton.  Centers were immobile giants who rarely strayed from the lane.  Etc, etc.
