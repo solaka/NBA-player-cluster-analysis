@@ -28,3 +28,27 @@ Turnover rate (torate) | Turnovers committed by player per 100 plays
 3pt FGA percent (pct3) | Pct of field goal attempts from 3-point range
 3-point shooting percentage (x3pct) | Pct of 3-point field goal attempts made
 2-point shooting percentage (x2pct) | Pct of 2-point field goal attempts made
+
+Why these 10?  Here’s my logic:
+
+•	Free throw attempt rate – Guys who spend their time banging down low draw more fouls.  In addition, players who spend time on the exterior but drive to the basket draw more fouls than those who spend their lives outside (e.g. 3-point specialists)
+
+•	Offensive and defensive rebound rates – True, these are strongly correlated, and I think a case could be made to just consider total rebound rate.  It’s a judgment call.
+
+•	Assist rate – This is somewhat of a proxy for how often a player handles the ball per possession, but is also obviously related to what the player tends to do with the ball once it’s in his hands.  (Like just about every other stat, it’s also somewhat teammate-dependent, but that’s just one of the many things that makes analyzing basketball harder than, say, baseball.)
+
+•	Steal rate / Block rate – These speak to the player’s role on defense.  Are they guarding the ballhandler and/or disrupting passing lanes?  Are they in a position to challenge guys trying to post up and/or driving to the rim?
+
+•	Turnover rate – As you might expect, turnover rate is often strongly related to assist rate.  Though as we’ll see, big, physical players who work underneath tend to have relatively high turnover rates despite low assist rates.
+
+•	3pt FGA percentage – This one clearly differentiates between players who can and do shoot from distance and those who can’t / don’t.
+
+•	2-pt FG pct / 3-pt FG pct – I know what you’re thinking: “I thought he said he wasn’t going to use stats that reflected how well a player performed his function”.  I did, but I’m using them based on the premise that they reflect more than just shooting ability.  All else equal, 2pt FG percentages will tend to be highest for those operating exclusively under the basket.  All else equal, 3pt FG percentages will tend to be higher for players getting a lot of open looks on spot up threes, as opposed to those having to create their own shot.
+
+The data I used was pulled using the very handy [ballr](https://cran.r-project.org/web/packages/ballr/index.html) package for R, which provides a convenient way to access data select tables from basketball-reference.com.  I used game results since the 2015-16 season (through 2/13/19), and included only players with at least 1,000 minutes played over that period.
+
+### Model
+I experimented with two types of clustering models: k-means and hierarchical.  For the hierarchical models, I also experimented with Mahalanobis distance (which employs the covariance matrix of the feature data) as well as Euclidean distance, and with both complete and average linkages.  The dendrograms indicated that Euclidean-complete offered the best hierarchical option (others often put outliers in their own clusters), but ultimately I wasn’t happy with the way the hierarchical models were clustering players.
+
+Instead, I chose a k-means model with a total of 12 clusters.  The decision was based in part on balancing within-cluster variance with the number of clusters, but also on iteratively inspecting how players were categorized under different numbers of clusters and choosing one that produced the “best” result (subjectively speaking).
+
