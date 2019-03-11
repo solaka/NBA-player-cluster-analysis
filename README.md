@@ -52,3 +52,21 @@ I experimented with two types of clustering models: k-means and hierarchical.  F
 
 Instead, I chose a k-means model with a total of 12 clusters.  The decision was based in part on balancing within-cluster variance with the number of clusters, but also on iteratively inspecting how players were categorized under different numbers of clusters and choosing one that produced the “best” result (subjectively speaking).
 
+### Results
+These are the 12 clusters that result, with my interpretation of what characteristics the model is focusing on, as well as a couple of archetypical examples from that category.
+
+Index | Category | Characteristics | Archetypes
+--- | --- | --- | ---
+1 | Banger | Draws a lot of fouls (very high FT rate).  Also high FG%, reb rate, block rate | Andre Drummond, DeAndre Jordan
+6 | Under the Basket | Works almost entirely down low (high FG%, reb & block rates), but draws fewer fouls than a Banger | Andrew Bogut, Tim Duncan
+7 | Stretch Big | Similar to Under the Basket but can step away and shoot the 3 if needed | Karl-Anthony Towns, Paul Millsap
+5 | Size and Distance | Block and reb rates lower than other big men, but also more effective from 3-pt range | Brook Lopez, Marc Gasol
+9 | Inside-Outside | Not ballhandlers (low ast & TO rates), but provide combination of fairly high reb & 3pt rates | Andre Iguodala, Carmelo Anthony
+4 | Offensive Hub | Offense runs through them: very high ast and TO rates, plus can score outside or at the rim | LeBron James, Russell Westbrook
+3 | Defensive Stopper | Good offensive balance; differentiated by very high steal rate | Jimmy Butler, Kawhi Leonard
+8 | Attacking Shooter | High ast rate / low reb rate like a guard, but high FT rate indicates tendency to drive | DeMar DeRozan, Devin Booker
+11 | Attacking Distributor | High assist rate, but higher FT rate and lower 3pt rate than Exterior Distributor | Damian Lillard, Kyrie Irving
+12 | Exterior Shooter | Broader role than 3-point Specialist; still high 3pt rate but more assists / TOs | CJ McCollum, Patrick Beverley
+2 | Exterior Distributor | High assist rate, but working mainly outside offensively (low FG%, FT rate; high 3pt att rate) | Lonzo Ball, Matthew Dellavedova
+10 | 3-point Specialist | Most points come off 3’s; low TO and FT rates indicate less ballhandling/driving | J.J. Redick, Kyle Korver
+
