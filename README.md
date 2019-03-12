@@ -74,7 +74,7 @@ Index | Category | Characteristics | Archetypes
 
 A look at the average statistics by cluster is helpful for understanding the characteristics of each group.
 
-![alt text](https://github.com/solaka/NBA-player-cluster-analysis/blob/master/table%20-%20mean%20stats%20by%20cluster.png "")
+![](https://github.com/solaka/NBA-player-cluster-analysis/blob/master/table%20-%20mean%20stats%20by%20cluster.png "")
 
 The categories that might be thought of as “centers” -- **1: Bangers**, **6: Under the Basket**, and **7: Stretch Big** -- all have similarly high block rates and 2-point field goal percentages.  What differentiates the Bangers is their physicality down low, as evidenced by their very high free throw and rebound rates.  Under the Basket players show no greater ability or willingness to shoot 3-pointers than Bangers, but don’t gather rebounds or – especially – fouls at nearly the same rate.  Stretch Bigs are similar to Under the Basket players in most respects, except that they are able to step away and shoot the three when called upon.
 
@@ -87,7 +87,7 @@ Finally, there are a few “special” positions -- **3: Defensive Stopper**, **
 ### Visualization
 In the graphic below, player clusters are shown plotted by the first two principal components.  Roughly speaking the first component relates to “size / physicality” and is characterized by high free throw, rebound, and block rates, as well as high field goal percentages.  The second component could be said to relate to “quickness / ballhandling”, where low values (arbitrarily, a result of the clustering algorithm) are associated with high assist, steal, and turnover rates.  Players with over 7000 minutes played over the previous 3+ seasons are labelled for reference.  
 
-![alt text](https://github.com/solaka/NBA-player-cluster-analysis/blob/master/graph%20-%20first%202%20PCs.png)
+![](https://github.com/solaka/NBA-player-cluster-analysis/blob/master/graph%20-%20first%202%20PCs.png)
 
 While this is a perfectly decent visualization, there’s a much better one – 3D and interactive! -- at **https://solak.shinyapps.io/nba_player_clustering/** that I strongly encourage you to check out.
 
