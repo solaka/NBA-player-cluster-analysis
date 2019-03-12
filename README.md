@@ -87,7 +87,7 @@ Finally, there are a few “special” positions -- **3: Defensive Stopper**, **
 ### Visualization
 In the graphic below, player clusters are shown plotted by the first two principal components.  Roughly speaking the first component relates to “size / physicality” and is characterized by high free throw, rebound, and block rates, as well as high field goal percentages.  The second component could be said to relate to “quickness / ballhandling”, where low values (arbitrarily, a result of the clustering algorithm) are associated with high assist, steal, and turnover rates.  Players with over 7000 minutes played over the previous 3+ seasons are labelled for reference.  
 
-![](https://github.com/solaka/NBA-player-cluster-analysis/blob/master/graph%20-%20first%202%20PCs.png)
+![](https://github.com/solaka/NBA-player-cluster-analysis/blob/master/graph%20-%20first%202%20PCs.jpg)
 
 While this is a perfectly decent visualization, there’s a much better one – 3D and interactive! -- at **https://solak.shinyapps.io/nba_player_clustering/** that I strongly encourage you to check out.
 
